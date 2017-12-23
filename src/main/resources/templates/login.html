@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Insert title here</title>
+
+<link rel="stylesheet"
+	href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+
+	<h1> LOGIN FORM </h1>
+	<br/>
+	<form name='f' th:action='@{/login}' th:method='POST'>
+	
+		<table>
+			<tr>
+				<td>User:</td>
+				<td><input type='text' name='username' value=''></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type='password' name='password' /></td>
+			</tr>
+			<tr>
+				<td colspan='2'><input name="submit" type="submit"
+					value="Login" /></td>
+			</tr>
+		
+		</table>
+	</form>
+</body>
+</html>
